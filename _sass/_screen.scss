@@ -10,10 +10,6 @@ body {
 	font: #{$base-font-size}/#{$base-font-line-height} $base-font-family;
 }
 
-h1, h2, h3, h4, h5, h6, nav {
-	font-family: $block-font-family;
-}
-
 hr {
 	display: block;
 	height: 1px;
@@ -164,7 +160,6 @@ pre > code {
 	a {
 		text-transform: uppercase;
 		color: $tag-color;
-		font-family: $block-font-family;
 		font-size: 0.8em;
 		border: 0;
 	}
