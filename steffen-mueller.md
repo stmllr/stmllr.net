@@ -10,8 +10,8 @@ I'm contributing to several open source projects, mainly TYPO3 CMS.
 
 Others call me: <a href="http://dannorth.net/introducing-bdd/" title="BDD Introduction by Dan North" class="external-link">Behavior-Driven Development</a> addict,
 IT security paranoid
-and even <a href="https://typo3.org/news/article/typo3-cms-60-end-of-life-announcement/" title="6.0 contributor credits by Helmut Hummel" class="external-link">skeptical perfectionist</a>.
-I appreciate the spirit of free source communities.
+or just <a href="https://typo3.org/news/article/typo3-cms-60-end-of-life-announcement/" title="6.0 contributor credits by Helmut Hummel" class="external-link">skeptical perfectionist</a>.
+I appreciate the spirit of free/open source software communities.
 All that gets reflected on twitter via <a href="https://twitter.com/stmllr" title="Steffen Müller on twitter" class="external-link-new-window">@stmllr</a> and on <a href="https://github.com/stmllr/" title="Steffen Müller on github" class="external-link-new-window">github</a>
 
 ## At work...
@@ -24,17 +24,16 @@ My daily work covers:
 
 **Planning**: Creating technical concepts and deciding on tools, processes and approaches, for example Domain Driven Design.
 
-**Software Architecture & development**: Creating sustainable yet pragmatic solutions, based on object oriented software. Refactoring, continuous development and&nbsp;design patterns are basic parts of that.
+**Software Architecture & Development**: Creating sustainable yet pragmatic solutions, based on object oriented software. Refactoring, continuous development and&nbsp;design patterns are basic parts of that.
 
 **Quality assurance**: Applied Test Driven Development with PHPUnit and Behavior Driven Development with Behat/Mink + Selenium, from unit tests over functional tests to full blown acceptance tests.
 
-**Continuous Delivery**: Developing continuous integration infrastructures.
+**Continuous Integration**: Automated Software Tests + Builds + Deployments using continuous integration services.
 
+**Team lead**: Enabling teams to successfully create and deliver software into the enterprise
 
 ## Open Source: TYPO3 active contributor
 
-My first contact with the TYPO3 community was in 2002. Many years later, in 2013, I became an official <a href="http://typo3.org/teams/core-development-team/roles-groups/" title="Roles and group in the TYPO3 CMS project" class="external-link">active contributor</a> of the TYPO3 core with merge rights. I have been a member of the <a href="http://typo3.org/teams/security/" title="The security team pages on typo3.org" class="external-link">TYPO3 security team</a> from 2004-2008. Additionally I maintain and develop several <a href="http://forge.typo3.org/users/348" title="My user account at TYPO3 forge" class="external-link">community extensions</a>.
+My first contact with the TYPO3 community was in 2002. Many years later, in 2013, I became an official <a href="http://typo3.org/teams/core-development-team/roles-groups/" title="Roles and group in the TYPO3 CMS project" class="external-link">active contributor</a> of the TYPO3 core with merge rights. I have been a member of the <a href="http://typo3.org/teams/security/" title="The security team pages on typo3.org" class="external-link">TYPO3 security team</a> from 2004-2008. I am part of the TYPO3 ELTS team and a reviewer of the TYPO3 developer certification program. Last but not least, I maintain and develop several <a href="http://forge.typo3.org/users/348" title="My user account at TYPO3 forge" class="external-link">community extensions</a>.
 
 The <a href="http://typo3.org/" title="The content management system TYPO3" class="external-link">Open Source CMS TYPO3</a> is my favorite tool for&nbsp;content management. It combines enterprise level features with a well networked, highly active and progressive open source community.
-
-        
