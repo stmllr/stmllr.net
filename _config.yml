@@ -14,4 +14,8 @@ markdown: kramdown
 sass:
   style: :compressed
 
-exclude: [vendor]
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
