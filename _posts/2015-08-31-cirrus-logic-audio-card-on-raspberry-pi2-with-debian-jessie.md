@@ -106,8 +106,6 @@ The fork from [HiassofT](https://github.com/HiassofT/rpi-linux) is currently the
 The following instructions are based on a [forum post on element14 by HiassofT](http://www.element14.com/community/thread/43711/l/driver-fixes-and-updates-to-kernel-31816-and-405):
 
     apt-get install screen bc
-    wget --quiet https://raw.githubusercontent.com/raspberrypi/tools/master/mkimage/mkknlimg
-    chmod a+x ./mkknlimg
     screen
     git clone -b cirrus-4.1.y --single-branch --depth 1 https://github.com/HiassofT/rpi-linux.git
     cd rpi-linux/
@@ -119,7 +117,7 @@ After half a day, get back to your session and install the build:
     screen -r
     sudo make modules_install
     sudo cp /boot/kernel7.img /boot/kernel7.img.orig-bak
-    sudo ../mkknlimg arch/arm/boot/zImage /boot/kernel7.img
+    sudo ./scripts/mkknlimg arch/arm/boot/zImage /boot/kernel7.img
     sudo cp -f arch/arm/boot/dts/*.dtb /boot/
     sudo cp -f arch/arm/boot/dts/overlays/*.dtb arch/arm/boot/dts/overlays/README /boot/overlays/
 
