@@ -12,8 +12,11 @@ tags:
   - stdWrap
   - cObject
 ---
-	<section><h3>Update</h3>
+
+<section><h3>Update</h3>
 <p>Please have a look at the comments on this article to&nbsp;read about updates and changes done in the TYPO3 core to tackle this problem.
+</p>
+<p><strong>I recommend to use markers for inserting parameters into queries as explained in </strong><a href="https://docs.typo3.org/typo3cms/TyposcriptReference/Functions/Select/Index.html">https://docs.typo3.org/typo3cms/TyposcriptReference/Functions/Select/Index.html</a>.
 </p>
 <h3>Introduction</h3>
 <p>As I have already shown in an <a href="/blog/2009-03-05-is-sql-injection-possible-in-typoscript-objects.html" >article have a year ago</a>, TypoScript is not save against SQL injections. I introduced a case, where a numerical GET parameter (a uid as integer) is used in the WHERE clause of a <a href="http://typo3.org/documentation/document-library/references/doc_core_tsref/4.2.0/view/1/8/#id4251042" title="cObject CONTENT in official TSref" class="external-link" >TypoScript CONTENT cObject</a>. But the parameter could be misused to inject malicious SQL into the WHERE clause. The solution was to parse the GET parameter through the <a href="http://typo3.org/documentation/document-library/references/doc_core_tsref/4.2.0/view/1/5/#id4149585" title="stdWrap documentation in official TSref" class="external-link" >stdWrap function intval</a>. It ensured that only integer values were passed to the WHERE clause.
