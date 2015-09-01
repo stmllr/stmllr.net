@@ -10,6 +10,8 @@ tags:
   - Linux Kernel
 ---
 
+[UPDATE 2015/09/01] Updated installation instructions for the devicetree drivers. Thanks to HiassofT.
+
 ### Motivation
 
 * The audio card does not work out of the box on a Raspberry Pi 2 (at least until 2015/08/31).
@@ -112,13 +114,14 @@ The following instructions are based on a [forum post on element14 by HiassofT](
     make bcm2709_defconfig && make && make modules
 
 Now press `[CTRL a] + d` to quit your console session and let your Raspberry work hard in the background.
-After half a day, get back to your session
+After half a day, get back to your session and install the build:
 
     screen -r
     sudo make modules_install
     sudo cp /boot/kernel7.img /boot/kernel7.img.orig-bak
     sudo ../mkknlimg arch/arm/boot/zImage /boot/kernel7.img
-    sudo cp arch/arm/boot/dts/overlays/rpi-cirrus-wm5102-overlay.dtb /boot/overlays/
+    sudo cp -f arch/arm/boot/dts/*.dtb /boot/
+    sudo cp -f arch/arm/boot/dts/overlays/*.dtb arch/arm/boot/dts/overlays/README /boot/overlays/
 
 Add the following lines to `/boot/config.txt`
 
