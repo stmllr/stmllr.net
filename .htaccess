@@ -39,4 +39,10 @@ RewriteRule ^blog/typo3-caching-framework-throws-client-error-with-broken-php5-m
 RewriteRule ^blog/security-in-typoscript-applying-stdwrap-functions-like-htmlspecialchars-to-data-in-datawrap/$ https://stmllr.net/blog/security-in-typoscript-applying-stdwrap-functions-like-htmlspecialchars-to-data-in-dataw/ [R=301,L]
 RewriteRule ^blog/security-in-typoscript-applying-stdwrap-functions-like-htmlspecialchars-to-data-in-datawrap/index.html$ https://stmllr.net/blog/security-in-typoscript-applying-stdwrap-functions-like-htmlspecialchars-to-data-in-dataw/index.html [R=301,L]
 
+RewriteRule ^tags/Raspi/index.html$ https://stmllr.net/tags/Raspberry\ Pi/index.html [R=301,L]
+RewriteRule ^tags/Linux/index.html$ https://stmllr.net/tags/Linux\ Kernel/index.html [R=301,L]
+RewriteRule ^tags/RaspberryPi/index.html$ https://stmllr.net/tags/Raspberry\ Pi/index.html [R=301,L]
+RewriteRule ^tags/Streaming\ Audio/index.html$ https://stmllr.net/tags/Audio/index.html [R=301,L]
+RewriteRule ^tags/Live\ Streaming/index.html$ https://stmllr.net/tags/Streaming/index.html [R=301,L]
+
 ErrorDocument 404 /404.html
