@@ -26,7 +26,7 @@ Credits go the the brave authors and contributors who shared their knowledge and
 
 ### The Cirrus Logic Audio
 
-The Cirrus Logic Audio Card is a high quality sound card (24-bit, 192kHz) and comes with analogue line-in/-out,
+The [Cirrus Logic Audio Card](http://uk.farnell.com/wolfson-microelectronics/cirrus-logic-audio-card/cirrus-logic-audio-card-for-raspberry/dp/2448312?searchRef=SearchLookAhead) is a high quality sound card (24-bit, 192kHz) and comes with analogue line-in/-out,
 SPDIF in/out and an onboard stereo microphone. It connects to the 40-pin GPIO of the Raspberry Pi 2.
 
 ![Cirrus Logic Audio Card on the Raspberry Pi 2](/files/images/rpi2-cirrus/rpi2-cirrus-logic-audio-card.jpg)
