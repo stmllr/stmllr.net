@@ -39,10 +39,10 @@ and the [specs datasheets](http://www.element14.com/community/docs/DOC-71261?ICI
 Craig Berscheidt from [Built-to-Spec](http://www.built-to-spec.com/) has designed a custom case.
 He fortunately provides the design files at [thingiverse](http://www.thingiverse.com/thing:785289)
 and the corresponding assembly instructions at the [Built-to-Spec blog](http://www.built-to-spec.com/blog/raspberry-pi-b-cirrus-logic-audio-card-case/).
-If you have no laser cutter, just **buy your case** at the [Built-to-Spec store](http://builttospecstore.storenvy.com/products/12911260-rpi-b-cirrus-logic-audio-card-case).
+If you don't have a laser cutter, just **buy your case** at the [Built-to-Spec store](http://builttospecstore.storenvy.com/products/12911260-rpi-b-cirrus-logic-audio-card-case).
 
 Since RPi 2 has [the same form factor as RPi B+](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/),
-the case from Built-to-Spec should fit. However I did not yet try, still waiting for delivery.
+the case from Built-to-Spec fits. The PCB clips are a bit brittle, be careful when snapping them onto the Raspberry Pi.
 
 ### And then it says: no soundcards found...
 
