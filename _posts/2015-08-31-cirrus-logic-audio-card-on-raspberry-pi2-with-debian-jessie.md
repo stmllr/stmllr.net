@@ -183,3 +183,39 @@ If you sell hardware for Raspberry Pi, ...
 * support your community with official updates, documentation and discussions,
 * add an issue tracker to your source code repository,
 * and don't fool your customers with bad promises about compatibility.
+
+<section class="comments">
+	<h3>Comments</h3>
+	<ol>
+
+		<li id="comment-f68551c6-24b8-4a81-bec4-1890576f7c7b">
+			<span class="comment-author">Bob</span>
+			<time class="comment-time" datetime="2015-10-07 00:14">on October 7, 2015 at 00:14</time>
+			<p>
+				Is there a way to get a single zip file of the sources for the driver, separate from the rest of the kernel?
+				It seems to me that building a loadable kernel module would be the simplest path.  I've done a few of those in the past, and I think they are a lot easier than trying to embed a driver in the kernel.
+				<br>
+				I have the 4.1-rpi.y kernel source on an external drive.  I would be glad to try a few builds if it would help people out.
+			</p>
+		</li>
+
+		<li id="comment-578bfc32-12fb-4381-aac8-d43ef21906ba">
+			<span class="comment-author">Steffen</span>
+			<time class="comment-time" datetime="2015-10-07 07:01">on October 7, 2015 at 07:01</time>
+			<p>
+				@Bob<br>Never thought about that. Not sure if you can make it without devicetree.
+			</p>
+		</li>
+
+		<li id="comment-91642005-6841-4dc8-9223-3111c1896811">
+			<span class="comment-author">Dave Whiteley</span>
+			<time class="comment-time" datetime="2015-10-07 07:43">on October 7, 2015 at 07:43</time>
+			<p>
+				Many thanks for your work.
+				<br>
+				Documentation is difficult.  You have done it superbly.  If only others..."
+			</p>
+		</li>
+
+	</ol>
+</section>
