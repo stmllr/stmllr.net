@@ -213,9 +213,30 @@ If you sell hardware for Raspberry Pi, ...
 			<p>
 				Many thanks for your work.
 				<br>
-				Documentation is difficult.  You have done it superbly.  If only others..."
+				Documentation is difficult.  You have done it superbly.  If only others...
 			</p>
 		</li>
 
+		<li id="comment-bca50934-640a-4cdb-97a6-22836e1a2888">
+			<span class="comment-author">Tom</span>
+			<time class="comment-time" datetime="2015-10-13 19:02">on October 13, 2015 at 19:02</time>
+			<p>
+				So I used Ragnar's image and it worked on Friday.  I had sound playing out the Cirrus board to speakers.
+				Today I get "no soundcards found".  Did the RPI update without me knowing it and cause this?"
+			</p>
+		</li>
+
+		<li id="comment-adb6eef4-53ef-44b8-8db2-5952525ba74f">
+			<span class="comment-author">Steffen</span>
+			<time class="comment-time" datetime="2015-10-13 20:58">on October 13, 2015 at 20:58</time>
+			<p>
+				@Tom, can you post the output of the following commands:<br>
+				<ul>
+					<li>raspberrypi-bootloader</li>
+					<li>uname -a</li>
+					<li>dmesg</li>
+				</ul>
+			</p>
+		</li>
 	</ol>
 </section>
