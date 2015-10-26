@@ -238,5 +238,42 @@ If you sell hardware for Raspberry Pi, ...
 				</ul>
 			</p>
 		</li>
+
+		<li id="comment-c2fadb30-afe6-4242-89fd-db5b86161675">
+			<span class="comment-author">Gert Kok</span>
+			<time class="comment-time" datetime="2015-10-24 09:16">on October 24, 2015 at 09:16</time>
+			<p>
+				Just above the bold tl;dr on this page is a link to an official Raspbian image. At that page an official Jessie can be found as well. I used that.<br>
+        <br>
+        Version:September 2015<br>
+        Release date:2015-09-24<br>
+        Kernel version:4.1<br>
+        <br>
+        Following your instructions I now have  1.20150923-1   and 4.1.10-v7+ but still no audiodevices are to be found.
+        <br>
+        selected output from messages:<br>
+        Oct 24 08:44:54 zoonyx kernel: [    6.339437] arizona_spi: disagrees about version of symbol arizona_dev_init<br>
+        Oct 24 08:44:54 zoonyx kernel: [    6.339474] arizona_spi: Unknown symbol arizona_dev_init (err -22)<br>
+        Oct 24 08:44:54 zoonyx kernel: [    6.339533] arizona_spi: disagrees about version of symbol arizona_dev_exit<br>
+        Oct 24 08:44:54 zoonyx kernel: [    6.339548] arizona_spi: Unknown symbol arizona_dev_exit (err -22)<br>
+        Oct 24 08:44:54 zoonyx kernel: [    6.383694] wm8804: probe of 1-003a failed with error -5<br>
+        <br>
+        what can I do more?<br>
+        ----------------------------------------------------------------------------------------<br>
+        Will there be a day when the 'hold' on the installed kernel can be removed?<br>
+			</p>
+		</li>
+
+		<li id="comment-f1331296-9d08-4757-b00c-2e2a933046e0">
+			<span class="comment-author">Steffen</span>
+			<time class="comment-time" datetime="2015-10-26 11:23">on October 26, 2015 at 11:23</time>
+			<p>
+				@Gert, it seems the package structure has been modified for the Jessie Raspbian image
+				and the kernel has been ripped off from the raspberrypi-bootloader package.
+				I'd need some time to investigate and test my setup instructions with the new Raspbian image.
+				This could take some time since I am quite busy ATM. In the meantime I suggest to stick to the wheezy image and the "tl;dr" procedure.
+			</p>
+			<p>Unless cirrus provides stable audio drivers to be merged into the official rpi kernel, you will have to deal with the 'hold' workaround.</p>
+		</li>
 	</ol>
 </section>
