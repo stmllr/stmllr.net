@@ -222,7 +222,7 @@ If you sell hardware for Raspberry Pi, ...
 			<time class="comment-time" datetime="2015-10-13 19:02">on October 13, 2015 at 19:02</time>
 			<p>
 				So I used Ragnar's image and it worked on Friday.  I had sound playing out the Cirrus board to speakers.
-				Today I get "no soundcards found".  Did the RPI update without me knowing it and cause this?"
+				Today I get "no soundcards found".  Did the RPI update without me knowing it and cause this?
 			</p>
 		</li>
 
@@ -232,8 +232,8 @@ If you sell hardware for Raspberry Pi, ...
 			<p>
 				@Tom, can you post the output of the following commands:<br>
 				<ul>
-					<li>raspberrypi-bootloader</li>
-					<li>uname -a</li>
+					<li>dpkg -l raspberrypi-bootloader</li>
+					<li>uname -r</li>
 					<li>dmesg</li>
 				</ul>
 			</p>
