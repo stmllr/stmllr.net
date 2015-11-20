@@ -2,7 +2,7 @@
 layout: post
 title: Cirrus Logic Audio Card on Raspberry Pi 2 with Debian Jessie
 date: 2015-08-31 09:42
-excerpt: It's an odyssey to put the Cirrus Logic Audio Card into operation on a Raspberry Pi 2. Here's a summary about the current state, pointing to useful resources and providing a tutorial to get the card up and running with Debian Jessie.
+excerpt: WARNING! In my opinion the hardware drivers of the Cirrus Logic Audio Card never left an experimental state and the card is not usable in production. It's an odyssey to put it into operation on a Raspberry Pi 2. Here's a summary about the current state, pointing to useful resources and providing a tutorial to get the card up and running with Debian Jessie.
 tags:
   - Raspberry Pi
   - Cirrus Logic
@@ -109,7 +109,7 @@ The following instructions are based on a [forum post on element14 by HiassofT](
     screen
     git clone -b cirrus-4.1.y --single-branch --depth 1 https://github.com/HiassofT/rpi-linux.git
     cd rpi-linux/
-    make bcm2709_defconfig && make && make modules
+    make bcm2709_defconfig && make -j4 && make -j4 modules
 
 Now press `[CTRL a] + d` to quit your console session and let your Raspberry work hard in the background.
 After half a day, get back to your session and install the build:
@@ -274,6 +274,100 @@ If you sell hardware for Raspberry Pi, ...
 				This could take some time since I am quite busy ATM. In the meantime I suggest to stick to the wheezy image and the "tl;dr" procedure.
 			</p>
 			<p>Unless cirrus provides stable audio drivers to be merged into the official rpi kernel, you will have to deal with the 'hold' workaround.</p>
+		</li>
+
+		<li id="comment-e61c70eb-73af-40bb-b639-3e33c8b1495b">
+			<span class="comment-author">unsys</span>
+			<time class="comment-time" datetime="2015-11-18 09:47">on November 11, 2015 at 09:47</time>
+			<p>
+				Thanks, helped me a lot :) would donate some bits if would post your bitcoin pub address near GPG
+			</p>
+		</li>
+
+		<li id="comment-d2aea990-8255-4539-a69d-0aa8c5723e24">
+			<span class="comment-author">Marino</span>
+			<time class="comment-time" datetime="2015-11-20 07:19">on November 20, 2015 at 07:19</time>
+			<p>
+				Hi,
+
+				at first, thank you for your work to create that tutorial.
+				I tryed to use this tutorial for my Pi2 with Raspbian Jessie, Cirrus Logic Audio and the original 7" touch display.<br><br>
+
+				After installation is no audiodevice found. When I use the original tutorial the card 0 exists two times.
+				The first one with 8 sub devices, the second one with one sub device. But no "WM5102 AiFi wm5102-aif1-0 "-expression in it.<br><br>
+
+				More confusing for me, the touch is not working any more after that.
+				In my understanding this should add the cirrus driver to the kerne and overwrite that with the existing one.
+				So either the driver for the touch has been overwritten or there is a problem and the driver doesn't work anymore
+				because of an other problem.<br><br>
+
+				Do you have any a hint for me, what I can do to get the Pi2 with Cirrus and Touch working together and not only separately?<br><br>
+
+				kind regards<br>
+				Marino
+			</p>
+		</li>
+
+		<li id="comment-fcf994da-aaf0-4c66-9bbc-d901753c4db3">
+			<span class="comment-author">Marino</span>
+			<time class="comment-time" datetime="2015-11-20 07:20">on November 20, 2015 at 07:20</time>
+			<p>
+				Sorry, dass ich nochmal störe. Ich sehe gerade, dass Du aus Freiburg kommst.
+				Du kannst natürlich auch gerne auf deutsch antworten, falls das einfacher ist :)
+			</p>
+		</li>
+
+		<li id="comment-af6aba8e-a42d-458c-b8e8-c5c2e5e87f3c">
+			<span class="comment-author">Marino</span>
+			<time class="comment-time" datetime="2015-11-20 09:26">on November 20, 2015 at 09:26</time>
+			<p>
+				english:<br>
+				I don't wanna annoy you, but I've got a tip, which was not mentioned before.
+				When you compile with "make" the Pi2 only uses one core, which is a maximum of 25% for the CPU load.
+				You can get a CPU load of 100%, when you use the option "-j4". So with the command "make -j4" the Pi2 uses all
+				of the 4 cores und goes up straight to 99-100% CPU load.<br><br>
+
+				In my case, I try to compile with Wheezy instead of Jessie in the hope to get the Cirrus and the official Touch
+				display working simultaneously. So using 4 Cores instead of only 1 is a big step.
+
+				Deutsch:<br>
+				Nicht, dass ich noch störe, aber ich habe einen Tipp, der bisher nicht erwähnt wird.<br><br>
+
+				Möchte man kompilieren mit dem Befehl "make", so nutzt der Pi2 nur einen Kern. Das dauert natürlich ewig.
+				Die CPU-Last wird also zu maximal 25% genutzt.<br><br>
+
+				Nutzt man einen Pi2, so kann man mit der Option -j4 den Pi2 dazu bringen, alle Kerne zum Kompilieren zu nutzen.
+				Also dann mit "make -j4" und schon steigt die CPU-Last auf 100%. <br><br>
+
+				Da ich damit ja gerade teste und mal mit Wheezy ausprobiere, ob ich anschließend auch kein Touch mehr nutzen kann,
+				kommt mir das gerade sehr gelegen. Schnell fertig ist es dann zwar nicht, aber immerhin.
+			</p>
+		</li>
+
+		<li id="comment-25697a87-0278-485a-a6f9-fa03ca838aa3">
+			<span class="comment-author">Steffen</span>
+			<time class="comment-time" datetime="2015-11-20 12:01">on November 20, 2015 at 12:01</time>
+			<p>
+				Marino, thanks for your valuable comments. Sorry for the delay in publishing and answering them.
+				All comments are moderated because of massive spam. And currently I hardly have any time for this blog.<br><br>
+
+				I guess the two audio devices you see are onboard bcm2835. Could be that you can't find the cirrus
+				device because the rpi kernel packages from the Raspbian distribution have changed significantly.
+				I didn't have time or the need to dig into that.<br><br>
+
+				The cirrus driver itself seems to be in such a bad state, that it breaks other hardware. I have read about that
+				in some forums, e.g. <a href="http://www.diyaudio.com/forums/pc-based/270908-raspberry-pi-cirruslogic-audio-card-fail.html">
+				http://www.diyaudio.com/forums/pc-based/270908-raspberry-pi-cirruslogic-audio-card-fail.html</a><br><br>
+
+				I suggest to use a cheap USB soundcard if you just want to have better sound quality on audio-out.
+				If you need more fancy HQ features, try a different device, e.g. one of the <a href="https://www.hifiberry.com/">
+				HiFiBerry</a> who's drivers are part of the official Raspbian distribution. Though I never tested this one.<br><br>
+
+				It's a shame that Cirrus sells a product which is IMHO not ready for production. I added a big fat warning
+				on top of this blog post.<br><br>
+
+				Thanks for your hint about "make -j4". I have added it to the tutorial.
+				</p>
 		</li>
 	</ol>
 </section>
