@@ -3,8 +3,8 @@ origin: import
 layout: post
 title: Live mp3 streaming from audio-in with DarkIce and Icecast2 on Raspberry Pi
 date: 2012-08-10 04:28
-excerpt: As a response to my lastest article about Streaming audio with MPD and Icecast2 on Raspberry Pi, I was asked for some ideas about live streaming. I took the chance to plug in an usb audio device with microphone to RasPi and tried to get it working. 
-tags: 
+excerpt: As a response to my lastest article about Streaming audio with MPD and Icecast2 on Raspberry Pi, I was asked for some ideas about live streaming. I took the chance to plug in an usb audio device with microphone to RasPi and tried to get it working.
+tags:
   - Raspberry Pi
   - DarkIce
   - Icecast
@@ -1257,6 +1257,30 @@ quality = 0.6</code></pre>
                 <pre><code>format = mp3</code></pre>
                 I have the same problem and I see that line left.
                 After line adding my darkice is running
+			</p>
+		</li>
+
+		<li id="comment-08a081b4-4bda-4ce5-97d8-11a5e7db12d9">
+			<span class="comment-author">Andreas</span>
+			<time class="comment-time" datetime="2015-11-18 16:23">on November 18, 2015 at 16:23</time>
+			<p>
+				Hi!
+
+				I'm running icecast and darkice on a RPi successfully, but when I turn the RPi off all statistics will be lost.<br>
+				Anyone could tell me how to analyze the listeners statistics so that I can monitor the accesses while streaming and afterwards of course?<br>
+				I'd like to know how many users have been listening that day and how many users where listening at the same time (p.e. 100 users that day with a max. of 20 users at the same time).<br><br>
+
+				Thank you very much!!!
+			</p>
+		</li>
+
+		<li id="comment-b0839a78-c2e9-48dd-9178-81da56bda267">
+			<span class="comment-author">Steffen</span>
+			<time class="comment-time" datetime="2015-11-20 12:03">on November 20, 2015 at 12:03</time>
+			<p>
+				Andreas, you can query the statistics in a machine readable format, e.g. json or xml:
+                <a href="http://icecast.org/docs/icecast-2.4.1/server-stats.html">http://icecast.org/docs/icecast-2.4.1/server-stats.html</a><br>
+                That's all I know. Good luck.
 			</p>
 		</li>
 	</ol>
