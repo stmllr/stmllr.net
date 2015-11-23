@@ -367,7 +367,42 @@ If you sell hardware for Raspberry Pi, ...
 				on top of this blog post.<br><br>
 
 				Thanks for your hint about "make -j4". I have added it to the tutorial.
-				</p>
+			</p>
+		</li>
+
+		<li id="comment-c9f96513-c98f-40ea-a045-c8a332be3472">
+			<span class="comment-author">Marino</span>
+			<time class="comment-time" datetime="2015-11-20 21:30">on November 20, 2015 at 21:30</time>
+			<p>
+				Hi Steffen,<br><br>
+
+				there is no problem with publishing with delay. The only problem was, that I worked on the Pi during the delay
+				and could not edit my posts :)<br><br>
+
+				Last week I saw a stereo pre-amplifiert. This amplifier has the ability to convolve audio in realtime with filters.
+				They use a Pi2 with the cirrus for that (<a href="http://www.audiovero.de/preamp-14-cleanvolver.php">http://www.audiovero.de/preamp-14-cleanvolver.php</a>).
+				Intereseting to know how they done it ;)<br><br>
+
+				In my case I need a display to show the video from my door communication system. Atm my normal DECT-Phones are
+				used to do the audio part und open the door (Asterisk and then a Fritzbox as Client with the phones, which are
+				managed by the Fritzbox).<br>
+				Later I want to test, if the Pi is also capable to be a SIP-Client. For Video and audio.
+				Thats what I need the Cirrus for. Speaker and Mic on ohne board without big cirumstances I thought.
+				Bad Idea, I know. Now I know better ;)<br><br>
+
+				But the part of audio convolving was also a point to test that. It runs on that hardware and I need that for my
+				system and don't want to run a PC every time. So that was the second reason to go with the Cirrus.
+				But that needs a digital input and a digital output.<br><br>
+
+				For Door Communication I need Mic, Speaker and Touchdisplay. For test with audio convolving a display is not
+				necessary, but even without It is the change to get the cirrus running nearly impossible for me.<br><br>
+
+				At least I could give you the hint with make -j4.<br><br>
+
+				I think me cirrus is going back to the seller, because of the lack of function.
+				I testet 2 days and the cirrus is still not working with wheezy or jessie.
+				In that time I could work and buy hardware that is capable to do his job, even if it costs a hack of a lot more money.
+			</p>
 		</li>
 	</ol>
 </section>
