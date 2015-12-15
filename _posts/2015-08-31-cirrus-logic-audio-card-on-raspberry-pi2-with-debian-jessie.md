@@ -404,5 +404,33 @@ If you sell hardware for Raspberry Pi, ...
 				In that time I could work and buy hardware that is capable to do his job, even if it costs a hack of a lot more money.
 			</p>
 		</li>
+
+		<li id="comment-e7914380-831f-4ae0-811d-cc077dc33e8b">
+			<span class="comment-author">Ronald</span>
+			<time class="comment-time" datetime="2015-12-12 00:39">on December 12, 2015 at 00:39</time>
+			<p>Thanks for the information for installing the Cirrus Logic Audio board.<br>
+				I first installed the “2015-11-21-raspbian-jessie.img” image and then used your installation procedure. The card is working perfect.<br><br>
+
+				But for my project I want to use next to the Cirrus Logic audio card the Adafruit 2.8” TFT/Touch screen.<br>
+				I have not found any information about building code for both the Logic audio card and the TFT display.<br>
+				The result is always a not working raspberry pi.<br><br>
+
+				Do you or anybody have any suggestions?
+			</p>
+		</li>
+
+		<li id="comment-8c66e31c-2b97-4b37-b1bb-411607eecd80">
+			<span class="comment-author">Steffen</span>
+			<time class="comment-time" datetime="2015-12-15 09:59">on December 15, 2015 at 09:59</time>
+			<p>Ronald, I have neither experiences with the rasbian-jessie image nor with the TFT screen.<br>
+				It looks like adafruit provides a compiled kernel including the TFT drivers. You would need to get the sources
+				of these drivers from Adafruit, merge them with the ones from cirrus onto the rasbian kernel repository
+				and then compile the kernel modules on your own.<br>
+				I'm sorry that I can't provide any more details.<br><br>
+
+				Any hardware without proper drivers merged into the official raspbian image heavily suck for the end users.
+			</p>
+		</li>
+
 	</ol>
 </section>

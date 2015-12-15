@@ -118,3 +118,14 @@ class CustomPageLayoutView implements PageLayoutViewDrawItemHookInterface {
 {% endhighlight %}
 
 A more detailed example can be found in [EXT:news](https://github.com/TYPO3-extensions/news/blob/master/Classes/Hooks/CmsLayout.php).
+
+<section class="comments">
+	<h3>Comments</h3>
+	<ol>
+		<li id="comment-03ce3ffe-215f-4d77-9051-51ea4d196354">
+			<span class="comment-author">Chi</span>
+			<time class="comment-time" datetime="2015-12-15 09:11">on December 15, 2015 at 09:11</time>
+			<p>Thank you for this detailed description! Helped me a lot to create my own hook.</p>
+		</li>
+	</ol>
+</section>
