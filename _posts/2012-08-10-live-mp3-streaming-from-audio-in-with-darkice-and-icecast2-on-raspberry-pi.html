@@ -1283,5 +1283,61 @@ quality = 0.6</code></pre>
                 That's all I know. Good luck.
 			</p>
 		</li>
+
+		<li id="comment-5b4a9de1-98bf-4eb2-aa15-fdbbd65a6817">
+			<span class="comment-author">Andy</span>
+			<time class="comment-time" datetime="2015-12-27 05:51">on December 27, 2015 at 05:51</time>
+			<p>
+                Hey Steffen,<br>
+                Awesome Post!<br>
+                If I am able to do a real time Analog to MP3 conversion before it hits the PI should I theoretically
+                be able to get low latency streaming?? I'm trying to get the Analog to Digital Stream in under 75ms
+                do you think this is possible? How would I figure out the actual conversion time from packaging to receiving?<br>
+                Thank you!!!
+			</p>
+		</li>
+
+		<li id="comment-718a5cdf-fcc7-4e56-a21a-45b81e2c8646">
+			<span class="comment-author">Brad</span>
+			<time class="comment-time" datetime="2015-12-28 14:52">on December 28, 2015 at 14:52</time>
+			<p>
+                Hi,<br>
+                i'm trying to setup a live stream to broadcastify. I was able to connect to their web server fine,
+                but I have no audio. i did the following step:<br>
+                -Plug the USB sound card into the Raspberry Pi<br>
+                -Plug your scanner's headphone jack into the mic jack on the USB sound card dongle<br>
+                -Start alsamixer<br>
+                -pi@bcfypi1:~# alsamixer<br>
+                -press F6, choose the "USB Headphone Set" entry<br>
+                -press your tab key to select the "Capture" device volume control<br>
+                use your "up arrow" key to adjust the level to it's lowest level possible (6)<br>
+                -press escape to exist alsamixer<br>
+                -run the following command to save the volume settings<br>
+                -sudo alsactl store<br>
+                <br><br>
+                I'm not sure what i missed, if you could help, thank you
+			</p>
+		</li>
+
+		<li id="comment-68a93e0c-869a-43c3-8f0e-ea1ef205deaf">
+			<span class="comment-author">Eike</span>
+			<time class="comment-time" datetime="2016-01-15 13:42">on January 15, 2016 at 13:42</time>
+			<p>
+                Hello,<br>
+                does this work for Rasbian Jessie on a Raspberry Pi 2 with USB Soundcard Hercules Muse including Line-In ???<br>
+                Thanks.
+			</p>
+		</li>
+
+		<li id="comment-5a612889-a77a-4cf6-99e0-ee7e6c79ff8c">
+			<span class="comment-author">Vervito</span>
+			<time class="comment-time" datetime="2016-01-17 23:21">on January 17, 2016 at 23:21</time>
+			<p>
+                Hi guys, do you have a idea how i can handle this problem ?<br>
+                DarkIce: AlsaDspSource.cpp:265: No such device [0]<br>
+                I plugin a usb PnP soundcard, work fine for a while but after about 15 seconds or sometimes a bit longer
+                it stop playing and i get the above error, at this moment the red led on the usb device stop blinking. Thanks.
+			</p>
+		</li>
 	</ol>
 </section>

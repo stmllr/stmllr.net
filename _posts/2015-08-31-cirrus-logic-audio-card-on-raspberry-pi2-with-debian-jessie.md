@@ -432,5 +432,28 @@ If you sell hardware for Raspberry Pi, ...
 			</p>
 		</li>
 
+		<li id="comment-ce1adc32-4652-4c05-8ccd-03576f31f82d">
+			<span class="comment-author">bob</span>
+			<time class="comment-time" datetime="2016-01-05 22:46">on January 5, 2016 at 22:46</time>
+			<p>The image provided by Element14 works on PI 1B, until een upgrade (update works well).
+			</p>
+		</li>
+
+		<li id="comment-87764a7b-14e0-435c-9c36-104cf931d5d3">
+			<span class="comment-author">Phil</span>
+			<time class="comment-time" datetime="2016-01-14 22:54">on January 14, 2016 at 22:54</time>
+			<p>Thank you very much for the build instructions.  Most excellent and got me going.
+			</p>
+		</li>
+
+		<li id="comment-aa067f33-a1fb-4466-ab65-d3fbec43ad2a">
+			<span class="comment-author">John Galt</span>
+			<time class="comment-time" datetime="2016-01-29 08:13">on January 29, 2016 at 08:13</time>
+			<p>Thank you so much!<br>
+         The steps worked PERFECTLY.<br>
+         This setup actually allows for headphone volume control (when using VLC, etc)... others don't.
+			</p>
+		</li>
+
 	</ol>
 </section>
