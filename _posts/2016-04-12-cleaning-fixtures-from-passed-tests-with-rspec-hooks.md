@@ -2,14 +2,12 @@
 layout: post
 title: Cleaning fixtures from passed tests with Rspec hooks
 date: 2016-04-12 15:42
-excerpt: Here comes a tiny howto for cleaning fixture files of Rspec examples within hooks. The fixtures shall be kept if the test fails.
+excerpt: This is a tiny howto about cleaning up fixture files of Rspec examples, given the test passes. My first post about Ruby. \o/
 tags:
   - Ruby
   - Testing
   - Rspec
 ---
-
-### Problem: Fixture files left on disk after test run
 
 One of the key functionality of [BackHub](https://backhub.co) is storing data to disk.
 The BackHub application and its I/O methods are covered by Rspec tests. Unfortunately we can't use
@@ -21,8 +19,9 @@ except for failed tests, so that developers could examine the test environment.
 
 ### Solution: Hook into Rspec and delete fixtures if the test passed
 
-The _after_ hook in Rspec can be used for cleanup routines. To avoid conflicts between examples, we use the
-`after :example` hook. Its block is called at the end of each example as a part of the example itself.
+The _after_ hook in Rspec can be used for triggering cleanup routines. To avoid conflicts between examples, we perform
+cleanups after each example, using the `after :example` hook. Its block is called at the end of each example as a part
+of the example itself.
 
     after :example do
       # do stuff here
@@ -34,8 +33,8 @@ Implementing our routine for wiping the disk was easy:
       FileUtils.rm_rf path_to_fixtures
     end
 
-However, we do not want to wipe fixtures of failed tests. In [Cucumber](https://github.com/cucumber/cucumber/wiki/Hooks)
-the final state of a scenario could be queried using:
+However, we do not want to wipe fixtures of failed tests, but of passed tests. Therefore the state of an executed test
+has to be determined. In [Cucumber](https://github.com/cucumber/cucumber/wiki/Hooks), this state is queried by using:
 
     # Cucumber hook here...
     After do |scenario|
