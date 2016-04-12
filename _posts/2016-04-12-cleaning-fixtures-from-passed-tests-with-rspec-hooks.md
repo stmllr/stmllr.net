@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Limiting cleanup routines in Rspec hooks to passed tests
+title: Cleaning fixtures from passed tests with Rspec hooks
 date: 2016-04-12 15:42
-excerpt: Here comes a tiny howto for cleaning up fixture files of Rspec examples within hooks. The fixtures shall be kept if the test fails.
+excerpt: Here comes a tiny howto for cleaning fixture files of Rspec examples within hooks. The fixtures shall be kept if the test fails.
 tags:
   - Ruby
   - Testing
@@ -61,4 +61,3 @@ which occurred during its execution. Exceptions can be used as an indicator that
     end
 
 Et voilà.
-
