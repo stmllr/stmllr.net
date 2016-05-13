@@ -23,29 +23,37 @@ The _after_ hook in Rspec can be used for triggering cleanup routines. To avoid 
 cleanups after each example, using the `after :example` hook. Its block is called at the end of each example as a part
 of the example itself.
 
-    after :example do
-      # do stuff here
-    end
+{% highlight ruby %}
+after :example do
+  # do stuff here
+end
+{% endhighlight %}
 
 Implementing our routine for wiping the disk was easy:
 
-    after :example do
-      FileUtils.rm_rf path_to_fixtures
-    end
+{% highlight ruby %}
+after :example do
+  FileUtils.rm_rf path_to_fixtures
+end
+{% endhighlight %}
 
 However, we do not want to wipe fixtures of failed tests, but of passed tests. Therefore the state of an executed test
 has to be determined. In [Cucumber](https://github.com/cucumber/cucumber/wiki/Hooks), this state is queried by using:
 
-    # Cucumber hook here...
-    After do |scenario|
-      if scenario.passed? do
-        FileUtils.rm_rf path_to_fixtures
-      end
-    end
+{% highlight ruby %}
+# Cucumber hook here...
+After do |scenario|
+  if scenario.passed? do
+    FileUtils.rm_rf path_to_fixtures
+  end
+end
+{% endhighlight %}
 
 Rspec also comes with a construct which represents the state of an executed test:
 
-    example.execution_result[:status]
+{% highlight ruby %}
+example.execution_result[:status]
+{% endhighlight %}
 
 But as mentioned above, the `after :example` hook of Rspec is part of the example itself. Within the hook, the example
 does not yet have a state, because it has not finished.
@@ -55,8 +63,10 @@ Nevertheless we need the current state of an example to decide if fixtures shoul
 With Rspec 2.7, an API was introduced to [ask the example for exceptions](https://github.com/rspec/rspec-core/issues/401)
 which occurred during its execution. Exceptions can be used as an indicator that a test failed:
 
-    after :example do |example|
-      FileUtils.rm_rf path_to_fixtures unless example.exception
-    end
+{% highlight ruby %}
+after :example do |example|
+  FileUtils.rm_rf path_to_fixtures unless example.exception
+end
+{% endhighlight %}
 
 Et voilà.

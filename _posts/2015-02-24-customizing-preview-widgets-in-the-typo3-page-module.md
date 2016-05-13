@@ -48,7 +48,7 @@ Feature: Preview widgets in page module showing custom fields of content element
     And the content element has a custom field "name" of type "text"
     And the content element has a custom field "portrait" of type "image"
 
-  Scenario: Show the name and the portrait of the content element "person" in the page module
+  Scenario: Show name + portrait of the content element "person" in the page module
     Given a page "staff" was added to the pagetree
     And a content element "CEO" of type "person" was added to "staff"
     And the name "John Doe" was added to the field "name" of "CEO"
@@ -56,7 +56,7 @@ Feature: Preview widgets in page module showing custom fields of content element
     When you go to the page module
     And you select "staff" as the current page
     Then you should see "John Doe" in the preview widget of "person"
-    And you should see a thumbnail image from "portrait" in the preview widget of "person"
+    And you should see a thumbnail from "portrait" in the preview widget of "person"
 {% endhighlight %}
 
 Much better if it would look like this:
@@ -75,7 +75,7 @@ EXT:demo/ext_localconf.php
 
 {% highlight php startinline %}
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['mydemo'] =
-	'Vendor\\Demo\\Hooks\\CustomPageLayoutView';
+  'Vendor\\Demo\\Hooks\\CustomPageLayoutView';
 {% endhighlight %}
 
 <span class="hyphenation">EXT:demo/Classes/Hooks/CustomPageLayoutView.php</span>
@@ -96,24 +96,24 @@ use TYPO3\CMS\Backend\View\PageLayoutViewDrawItemHookInterface,
  */
 class CustomPageLayoutView implements PageLayoutViewDrawItemHookInterface {
 
-	/**
-	 * Preprocesses the preview rendering of a content element.
-	 *
-	 * @param PageLayoutView $parentObject Calling parent object
-	 * @param boolean $drawItem Whether to draw the item using the default functionalities
-	 * @param string $headerContent Header content
-	 * @param string $itemContent Item content
-	 * @param array $row Record row of tt_content
-	 * @return void
-	 */
-	public function preProcess(&$parentObject, &$drawItem, &$header, &$item, &$row) {
-		if ($row['CType'] !== 'demo_person') return;
+  /**
+   * Preprocesses the preview rendering of a content element.
+   *
+   * @param PageLayoutView $parentObject Calling parent object
+   * @param boolean $drawItem Whether to draw the item using the default functionalities
+   * @param string $headerContent Header content
+   * @param string $itemContent Item content
+   * @param array $row Record row of tt_content
+   * @return void
+   */
+  public function preProcess(&$parentObject, &$drawItem, &$header, &$item, &$row) {
+    if ($row['CType'] !== 'demo_person') return;
 
-		$drawItem = FALSE;
-		$header = '<strong>' . htmlspecialchars($row['header']) . '</strong><br />';
-		$item = htmlspecialchars($row['tx_demo_name']) . '<br><br>';
-		$item .= $parentObject->thumbCode($row, 'tt_content', 'tx_demo_portrait');
-	}
+    $drawItem = FALSE;
+    $header = '<strong>' . htmlspecialchars($row['header']) . '</strong><br />';
+    $item = htmlspecialchars($row['tx_demo_name']) . '<br><br>';
+    $item .= $parentObject->thumbCode($row, 'tt_content', 'tx_demo_portrait');
+  }
 }
 {% endhighlight %}
 
