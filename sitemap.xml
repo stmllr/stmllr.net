@@ -5,7 +5,7 @@
 	{% for post in site.posts %}
 	<url>
 		<loc>{{ site.url }}{{ post.url | remove: 'index.html' }}</loc>
-		{% if post.date %}<lastmod>{{ post.date | date_to_xmlschema }}</lastmod>{% endif %}
+		<lastmod>{{ post.last_modified_date | date_to_xmlschema }}</lastmod>
 	</url>
 	{% endfor %}
 
