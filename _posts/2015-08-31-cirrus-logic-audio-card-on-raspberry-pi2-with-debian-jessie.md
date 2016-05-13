@@ -455,5 +455,59 @@ If you sell hardware for Raspberry Pi, ...
 			</p>
 		</li>
 
+		<li id="comment-e7326be0-1d78-4844-9bb5-38ceab8bf2bd">
+			<span class="comment-author">Francois555</span>
+			<time class="comment-time" datetime="2016-05-12 18:33">on May 12, 2016 at 18:33</time>
+			<p>Hi,
+         this is to report sucess for using the Cirrus audio card on a raspi3:<br>
+         I used the info from the link: <a href="http://www.horus.com/~hias/cirrus-driver.html">http://www.horus.com/~hias/cirrus-driver.html</a><br>
+         I got the  cirrus audio card from element14<br>
+         <a href="https://www.element14.com/community/community/raspberry-pi/raspberry-pi-accessories/wolfson_pi">https://www.element14.com/community/community/raspberry-pi/raspberry-pi-accessories/wolfson_pi</a><br>
+         I followed the instructions of the horus.com link, and installed the modified kernel 4.4.6 on my raspi3, with the modifications to get the cirrus card running, as explained in that link. I then got the cirrus card visible:<br>
+         <br>
+         <pre><code>
+         pi@raspberrypi:~ $  aplay -l
+         **** List of PLAYBACK Hardware Devices ****
+         card 0: ALSA [bcm2835 ALSA], device 0: bcm2835 ALSA [bcm2835 ALSA]
+           Subdevices: 8/8
+           Subdevice #0: subdevice #0
+           Subdevice #1: subdevice #1
+           Subdevice #2: subdevice #2
+           Subdevice #3: subdevice #3
+           Subdevice #4: subdevice #4
+           Subdevice #5: subdevice #5
+           Subdevice #6: subdevice #6
+           Subdevice #7: subdevice #7
+         card 0: ALSA [bcm2835 ALSA], device 1: bcm2835 ALSA [bcm2835 IEC958/HDMI]
+           Subdevices: 1/1
+           Subdevice #0: subdevice #0
+         card 1: sndrpiwsp [snd_rpi_wsp], device 0: WM5102 AiFi wm5102-aif1-0 []
+           Subdevices: 1/1
+           Subdevice #0: subdevice #0
+         </code></pre>
+         along with:<br>
+         <pre><code>
+         pi@raspberrypi:~ $ i2cdetect -y 1
+              0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+         00:          -- -- -- -- -- -- -- -- -- -- -- -- --
+         10: -- -- -- -- -- -- -- -- -- -- 1a -- -- -- -- --
+         20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+         30: -- -- -- -- -- -- -- -- -- -- -- UU -- -- -- --
+         40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+         50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+         60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+         70: -- -- -- -- -- -- -- --
+         pi@raspberrypi:~ $
+         </code></pre>
+
+         I then went to the installation of pd-l2ork ("Pure data Linux Laptop Orchestra") using the info of the link: <a href="http://l2ork.music.vt.edu/main/make-your-own-l2ork/software/raspberry-pi/">http://l2ork.music.vt.edu/main/make-your-own-l2ork/software/raspberry-pi/</a><br>
+         Work is in progress; I already get the Wolfson audio output working from within the installed application pd-l2ork, testing either sine output or white noise on a headset.<br>
+         <br>
+         Overall, things went smoothly, without any compilation.<br>
+         <br>
+         Clearly, the info on the hias's blog at horus.com is exquisite for making use of the Cirrus audio card on a raspberry 3 without hassle ! :-)<br>
+			</p>
+		</li>
+
 	</ol>
 </section>

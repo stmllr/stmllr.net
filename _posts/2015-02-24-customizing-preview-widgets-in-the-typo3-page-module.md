@@ -127,5 +127,24 @@ A more detailed example can be found in [EXT:news](https://github.com/TYPO3-exte
 			<time class="comment-time" datetime="2015-12-15 09:11">on December 15, 2015 at 09:11</time>
 			<p>Thank you for this detailed description! Helped me a lot to create my own hook.</p>
 		</li>
+    <li id="comment-ad5bb3fe-dbc1-436d-afaa-5d70f9699eb8">
+      <span class="comment-author">Alex</span>
+      <time class="comment-time" datetime="2016-05-13 10:00">on May 5, 2016 at 10:00</time>
+      <p>Thank you for writing this guide, it helped me figure out how to this after hours of searching. I just wish Typo3 would have more official documentation of this quality.<br>
+      <br>
+      I had a problem while trying to implement this solution: I was getting a blank screen when clicking on a page in the backend (no preview whatsoever). The apache error logs said that the function declaration should exactly match the one in <code>TYPO3\CMS\Backend\View\PageLayoutViewDrawItemHookInterface</code><br>
+      <br>
+      So in this case it should be:<br><br>
+        <code>public function preProcess(PageLayoutView &$parentObject, &$drawItem, &$header, &$item, array &$row)</code><br>
+      <br><br>
+      I hope this helps.
+      </p>
+    </li>
+    <li id="comment-bd40c2a5-89ac-23ff-471a-836bcd29a7d2">
+      <span class="comment-author">Steffen</span>
+      <time class="comment-time" datetime="2016-05-13 20:01">on May 5, 2016 at 20:01</time>
+      <p>Alex, thanks for your feedback. Since PHP7 checks for implementing interfaces are very strict.
+      </p>
+    </li>
 	</ol>
 </section>
