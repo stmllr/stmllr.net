@@ -5,6 +5,6 @@ rvm:
 # Assume bundler is being used, install step will run `bundle install`.
 #script: ./script/cibuild
 
-install: gem install jekyll
+install: bundle install
 
 script: jekyll build
