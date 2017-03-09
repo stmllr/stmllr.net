@@ -1349,5 +1349,84 @@ quality = 0.6</code></pre>
                 Thank you Stefan and teratech
 			</p>
 		</li>
+
+		<li id="comment-aa0cc5a7-376b-4e4c-9824-06167b18d959">
+			<span class="comment-author">Noel Petit</span>
+			<time class="comment-time" datetime="2016-05-30 14:08">on May 30, 2016 at 14:08</time>
+			<p>
+                The build fails with the May 2016 version of Jessie/Raspbian. Is there an updated debian/rules that will
+                build and run with the USB audio adapter?
+			</p>
+		</li>
+
+		<li id="comment-5b26b642-903b-457c-8f74-3b9c642c0dec">
+			<span class="comment-author">michel jacobs</span>
+			<time class="comment-time" datetime="2016-08-18 12:29">on August 18, 2016 at 12:29</time>
+			<p>
+                Updating darkice to latest version: change to your src directory and download the latest version of
+                darkice, wget http://sourceforge.net/projects/darkice/files/darkice/1.3/darkice-1.3.tar.gz .<br>
+                Copy the subdirectory debian from darkice-1.0 to darkice-1.3 (rules should be edited allready!)
+                proceed like before!
+			</p>
+		</li>
+
+		<li id="comment-5aa29e12-3c71-4910-b34f-17d643dac514">
+			<span class="comment-author">dominic</span>
+			<time class="comment-time" datetime="2016-08-18 22:48">on August 18, 2016 at 22:48</time>
+			<p>
+                any tips on improving/filtering the audio to remove a background hiss. This is only evident at high
+                gain/volume, but i'd love to play with this in order to extend the working range of my mic
+			</p>
+		</li>
+
+		<li id="comment-27c5018b-cff7-41c8-b35f-ab931ec3b702">
+			<span class="comment-author">Matt</span>
+			<time class="comment-time" datetime="2016-09-23 17:24">on September 23, 2016 at 17:24</time>
+			<p>
+                Hi,<br>
+                I've set this up before very succesfully, but with a new raspberry pi 3 I get the following error when
+                starting darkice and I can't work out what has changed. Can anyone help?<br>
+                <br>
+                DarkIce: TcpSocket.cpp:251: connect error [111]<br>
+                <br>
+                I'm confident darkice has the right server and port settings in the config file.<br>
+                Thanks
+			</p>
+		</li>
+
+		<li id="comment-a66c58a2-3182-452c-9307-b4454603c51a">
+			<span class="comment-author">Randy</span>
+			<time class="comment-time" datetime="2016-12-14 22:39">on December 14, 2016 at 22:39</time>
+			<p>
+                One other thing about the:<br>
+                DarkIce: LameLibEncoder.cpp:75: lame lib opening underlying sink error [0]<br>
+                <br>
+                I got this, and my password and ports and hosts were all correct. I was using icecast2. I needed to
+                delete all the entries for [icecast1-0] and leave [icecast2-0]<br>
+                <br>
+                I know the thread is old, but since it is the standard for RasPi I thought I'd add it.
+			</p>
+		</li>
+
+		<li id="comment-6fe95b9b-c30a-459f-bb1c-5c59c28b5395">
+			<span class="comment-author">Ethan Hall</span>
+			<time class="comment-time" datetime="2016-12-27 00:28">on December 27, 2016 at 00:28</time>
+			<p>
+                hello I am getting an error when doing the final step and running darkice, here is the error, you you
+                find anything to fix this please email me at nitrothechameleon@gmail.com thanks! :<br>
+                <br>
+                pi@raspberrypi:~ $ sudo darkice<br>
+                DarkIce 1.0 live audio streamer, http://code.google.com/p/darkice/<br>
+                Copyright (c) 2000-2007, Tyrell Hungary, http://tyrell.hu/<br>
+                Copyright (c) 2008-2010, Akos Maroy and Rafael Diniz<br>
+                This is free software, and you are welcome to redistribute it<br>
+                under the terms of The GNU General Public License version 3 or<br>
+                any later version.<br>
+                <br>
+                Using config file: /etc/darkice.cfg<br>
+                Using OSS DSP input device: /dev/dsp<br>
+                DarkIce: ConfigSection.cpp:117: format missing in section icecast-0 [0]
+			</p>
+		</li>
 	</ol>
 </section>

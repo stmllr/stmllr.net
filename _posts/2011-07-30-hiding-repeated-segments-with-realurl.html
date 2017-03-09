@@ -4,7 +4,7 @@ layout: post
 title: Hiding repeated segments with RealURL
 date: 2011-07-30 13:24
 excerpt: This article demonstrates how to remove parts of an URL in TYPO3 using RealURL. Especially the excessive use of getParams of Extbase plugins results in superfluous repeated parts in URLs. Guest author Tomaž Zaman will show you how to tackle that problem.
-tags: 
+tags:
   - TYPO3
   - RealURL
   - Extbase
@@ -233,5 +233,14 @@ tags:
 			</p>
 		</li>
 
+        <li id="comment-af42aa68-1cd2-495d-814d-12369a85e282">
+            <span class="comment-author">Dmitry Dulepov (realurl author)</span>
+            <time class="comment-time" datetime="2017-03-09 16:24">on March 09, 2017 at 16:24</time>
+            <p>
+                You do not need php for that. This solution is too heavy and dirty.<br>
+                <br>
+                You just need empty postVars for action/controller with noMatch=bypass and a TS condition that sets config.defaultGetVars to action and controller on that page.
+            </p>
+        </li>
 	</ol>
 </section>

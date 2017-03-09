@@ -509,5 +509,20 @@ If you sell hardware for Raspberry Pi, ...
 			</p>
 		</li>
 
+		<li id="comment-40db4337-9a0b-4402-9866-d9f9672afe4f">
+			<span class="comment-author">Alessandro Ferri</span>
+			<time class="comment-time" datetime="2016-07-05 09:33">on July 05, 2016 at 09:33</time>
+			<p>Hi Steffen, I follow your tutorial and I build the kernel in raspberry Pi2/Jessie and work fine. It is possible to build the same kernel on raspberry Pi3/Jassie ?
+			</p>
+		</li>
+
+		<li id="comment-532fe33a-77bc-4ecb-922f-969d10050951">
+			<span class="comment-author">Rohit</span>
+			<time class="comment-time" datetime="2017-03-03 18:43">on March 03, 2017 at 18:43</time>
+			<p>Worked with this audio card 2-3 years back for element14 roadtest and other stuff. Sad to see no improvements and the card is still surviving the market.
+         Great documentation, btw. :)
+			</p>
+		</li>
+
 	</ol>
 </section>

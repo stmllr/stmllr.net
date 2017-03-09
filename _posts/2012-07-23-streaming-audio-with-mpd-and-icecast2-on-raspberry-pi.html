@@ -421,5 +421,26 @@ tags:
 			</p>
 		</li>
 
+		<li id="comment-2a5312f4-fba6-43d8-bf20-f35e46978df3">
+			<span class="comment-author">Daniel</span>
+			<time class="comment-time" datetime="2016-10-05 22:15">on October 05, 2016 at 22:15</time>
+			<p>
+                I have a public webserver (apache2) and followed this guide, but &lt;&lt;myaddress&gt;&gt;:8000/
+                doesn't respond. I chose &lt;&lt;myaddress&gt;&gt; as the hostname during the icecast configuration and
+                changed it to "localhost" in the "icecast.xml" after it didn't work.<br>
+                <br>
+                I did *not* typed in "sudo modprobe ipv6", I changed bind_to_address "localhost" to bind_to_address
+                "127.0.0.1" in the mpd.conf instead.<br>
+                <br>
+                The result of "sudo netstat -ltpn" looks equals to mine (except the missing tcp6 entry).<br>
+                <br>
+                Once I tried to replace in the mpd.conf every "localhost" and "127.0.0.1" with &lt;&lt;myaddress&gt;&gt;
+                but then I got the error "Failed to bind to '&lt;&lt;ipaddress&gt;&gt:6600': Cannot assign requested address",
+                so I changed it back.<br>
+                <br>
+                Had somebody similar problems?"
+			</p>
+		</li>
+
 	</ol>
 </section>
