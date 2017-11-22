@@ -18,7 +18,7 @@ My daily work covers:
 
 **Simplicity**: Simpler means easier to understand, easier to maintain and less error-prone. Simplicity does not mean quick+dirty.
 
-**Requirement analysis**: focusing on customer needs to build the right things - applying agile methods, like user stories, modeling by example with BDD and rapid prototyping.
+**Requirement analysis**: focusing on customer needs to build the right things - applying agile methods, like user stories, example mapping and rapid prototyping.
 
 **Consulting**: Analysis and evaluation of software architecture and quality, for example structural code analysis, basic security audits and performance tests.
 
