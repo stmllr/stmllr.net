@@ -16,6 +16,8 @@ All that gets reflected on twitter via [@stmllr](https://twitter.com/stmllr "Ste
 
 My daily work covers:
 
+**Simplicity**: Simpler means easier to understand, easier to maintain and less error-prone. Simplicity does not mean quick+dirty.
+
 **Requirement analysis**: focusing on customer needs to build the right things - applying agile methods, like user stories, modeling by example with BDD and rapid prototyping.
 
 **Consulting**: Analysis and evaluation of software architecture and quality, for example structural code analysis, basic security audits and performance tests.
@@ -24,14 +26,20 @@ My daily work covers:
 
 **Software Architecture & Development**: Creating sustainable yet pragmatic solutions, based on object oriented software. Continuous refactoring and using design patterns are basic parts of that.
 
-**Quality assurance**: Applied Test/Behavior Driven Development with Cucumber, Rspec, PHPUnit and Behat/Mink + Selenium, from unit tests over functional tests to full blown acceptance tests.
+**Quality assurance**: Doing the things right - and doing the right things: Applied Test/Behavior Driven Development with Cucumber, Rspec, PHPUnit and Behat/Mink + Selenium, from unit tests over functional tests to full blown acceptance tests.
 
-**Continuous Integration**: Fully automated Software Tests + Builds + Deployments using continuous integration services and containerization with docker.
+**Continuous Integration**: Fully automated Software Tests + Builds + Deployments using continuous integration services, deploy pipes and containerization with docker.
 
-**Team lead**: Enabling teams to successfully create and deliver software into the enterprise.
+**Infrastructure as code**: Managing cloud services (AWS) with terraform.
+
+**Team lead and coaching**: Enabling teams to successfully create and deliver software into the enterprise.
+
+**Working mode**: Mainly Scrum, remote and on-site, focusing and delivering the important things.
 
 ## Open Source: TYPO3 community
 
-My first contact with the TYPO3 community was in 2002. Many years later, in 2013, I became an official [core team member](http://typo3.org/teams/core-development-team/roles-groups/ "Roles and group in the TYPO3 CMS project") with merge rights. In 2017 I stepped back from this role. I have been a member of the [TYPO3 security team](http://typo3.org/teams/security/ "TYPO3 security team") from 2004 to 2008 and rejoined the team in 2013. Last but not least, I am a reviewer of the TYPO3 developer certification program and maintain and develop several [community extensions](http://forge.typo3.org/users/348).
+The TYPO3 community teached me how to master software projects in the 21st century: Working remotely, asynchronously, in heterogenous constantly changing teams with changing requirement. Fixing real world issues.
+
+My first contact with the TYPO3 community was in 2002. Many years later, in 2013, I became an official [core team member](http://typo3.org/teams/core-development-team/roles-groups/ "Roles and group in the TYPO3 CMS project") with merge rights. In 2017 I stepped back from this role. I have been a member of the [TYPO3 security team](http://typo3.org/teams/security/ "TYPO3 security team") from 2004 to 2008 and 2013-2017. Last but not least, I am a reviewer of the TYPO3 developer certification program and maintain and develop several [community extensions](http://forge.typo3.org/users/348).
 
 The [Open Source CMS TYPO3](http://typo3.org/ "The content management system TYPO3") is my favorite tool for content management. It combines enterprise level features with a well networked, highly active and progressive open source community.
