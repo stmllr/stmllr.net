@@ -15,6 +15,4 @@ Germany
 
 e-mail: typo3(_ath_)t3node.com
 
-The visits on this website are being tracked with Piwik for my personal curiosity . No personal data is stored. Your IP-Address gets anonymized before being stored. No data is transmitted to external services. "Do not track" (DNT) headers are respected. If you have any question, please don't hesitate to write an E-mail.
-
-
+Respect privacy. No tracking happens on this website. No personal data is stored. No data is transmitted to external services.
