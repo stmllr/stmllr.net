@@ -15,4 +15,4 @@ Germany
 
 e-mail: typo3(_ath_)t3node.com
 
-Respect privacy. No tracking happens on this website. No personal data is stored. No data is transmitted to external services.
+Respect privacy. No tracking happens on this website. No personal data is stored. No cookie. No data is transmitted to external services.
