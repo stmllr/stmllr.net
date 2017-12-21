@@ -2,7 +2,7 @@
 layout: post
 title: Cirrus Logic Audio Card on Raspberry Pi 2 with Debian Jessie
 date: 2015-08-31 09:42
-excerpt: WARNING! In my opinion the hardware drivers of the Cirrus Logic Audio Card never left an experimental state and the card is not usable in production. It's an odyssey to put it into operation on a Raspberry Pi 2. Here's a summary about the current state, pointing to useful resources and providing a tutorial to get the card up and running with Debian Jessie.
+excerpt: Legacy article about getting the Cirrus Logic Audio Card up and running with Debian Jessie.
 tags:
   - Raspberry Pi
   - Cirrus Logic
@@ -10,7 +10,11 @@ tags:
   - Linux Kernel
 ---
 
-[UPDATE 2015/09/01] Updated installation instructions for the devicetree drivers. Thanks to HiassofT.
+### [UPDATE 2017/12/21] The driver for the Cirrus Logic Audio Card left its experimental state and the card is easily usable in production.
+
+[HiassofT provides an up-to-date howto](http://www.horus.com/~hias/cirrus-driver.html). Details can be found in the [element14 forum](https://www.element14.com/community/thread/57975).
+
+### [UPDATE 2015/09/01] Updated installation instructions for the devicetree drivers. Thanks to HiassofT.
 
 ### Motivation
 
