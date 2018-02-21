@@ -32,7 +32,7 @@ My daily work covers:
 
 **Infrastructure as code**: Managing cloud services (AWS) with terraform.
 
-**Team lead and coaching**: Enabling teams to successfully create and deliver software into the enterprise.
+**Team lead and coaching**: Enabling teams to successfully create and deliver software into the enterprise. I am a [certified Professional Scrum Master™ (PSM-I)](https://www.scrum.org/user/320990).
 
 **Working mode**: Mainly Scrum, remote and on-site, focusing and delivering the important things.
 
