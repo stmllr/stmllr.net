@@ -442,5 +442,40 @@ tags:
 			</p>
 		</li>
 
+        <li id="comment-7d89b678-9426-48e1-8302-87057394f1e2">
+            <span class="comment-author">Zsolt</span>
+            <time class="comment-time" datetime="2018-02-22 20:54">on February 22, 2018 at 20:54</time>
+            <p>
+                When I running the mpc update<br>
+                I got: error: No database<br>
+                I have the following config:<br>
+                log_file &quot;/var/log/mpd/mpd.log&quot;<br>
+                db_file &quot;/var/lib/mpd/tag_cache&quot;<br>
+                user &quot;mpd&quot;<br>
+                group &quot;audio&quot;<br>
+                audio_output {<br>
+                type &quot;shout&quot;<br>
+                name &quot;My Rspberry Pi Stream&quot;<br>
+                description &quot;This is a Icecast2 stream on my Raspberry Pi&quot;<br>
+                host &quot;localhost&quot;<br>
+                port &quot;8000&quot;<br>
+                mount &quot;/mpd&quot;<br>
+                password &quot;hackme&quot;<br>
+                bitrate &quot;128&quot;<br>
+                format &quot;44100:16:2&quot;<br>
+                encoding &quot;mp3&quot;<br>
+                }<br>
+                rights looks like good:<br>
+                pi@raspberrypi:/var/lib/mpd $ cd /var/lib/mpd<br>
+                pi@raspberrypi:/var/lib/mpd $ ls -lrt<br>
+                total 20<br>
+                drwxrwxr-x 2 mpd audio 4096 Dec 12  2014 playlists<br>
+                -rw-r--r-- 1 mpd audio 3072 Feb 22 19:44 sticker.sql<br>
+                -rw-r--r-- 1 mpd audio  204 Feb 22 19:44 tag_cache<br>
+                -rw-r--r-- 1 mpd audio  189 Feb 22 19:50 state<br>
+                drwxrwxr-x 2 mpd audio 4096 Feb 22 19:52 music<br>
+
+            </p>
+        </li>
 	</ol>
 </section>
