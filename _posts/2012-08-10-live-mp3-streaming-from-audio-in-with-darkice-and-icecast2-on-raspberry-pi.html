@@ -1542,9 +1542,62 @@ quality = 0.6</code></pre>
             <span class="comment-author">Steffen</span>
             <time class="comment-time" datetime="2018-04-09 12:22">on July 23, 2018 at 09:41</time>
             <p>
-                Hi Roozano, try with:
-
+                Hi Roozano, try with:<br>
+                <br>
                 debchange -v 1.2-999~mp3+1
+            </p>
+        </li>
+
+        <li id="comment-6e27230b-167d-4277-b468-c14d3865b633">
+            <span class="comment-author">Roozano</span>
+            <time class="comment-time" datetime="2018-07-24 06:00">on July 24, 2018 at 06:00</time>
+            <p>
+                Hi Steffen, thx a lot, it works...<br>
+
+            </p>
+        </li>
+
+        <li id="comment-e6da572e-c12a-471a-bb36-d7bd12f6027c">
+            <span class="comment-author">Roozano</span>
+            <time class="comment-time" datetime="2018-07-24 06:12">on July 24, 2018 at 06:12</time>
+            <p>
+                Hi Steffen, I had another problem:<br>
+                root@streamer:~/src/darkice-1.2# debchange -v 1.2-999~mp3+1<br>
+                darkice (1.2-999~mp3+1) UNRELEASED; urgency=medium<br>
+                * New build with mp3 support<br>
+                -- root &lt;root@streamer&gt;  Tue, 24 Jul 2018 11:08:20 +0700<br>
+                darkice (1.2-0.2) unstable; urgency=medium<br>
+                * Non-maintainer upload.<br>
+                * Add patch to prevent FTBFS on kfreebsd.<br>
+                -- Alessio Treglia &lt;alessio@debian.org&gt;  Fri, 20 Jun 2014 17:16:25 +0100<br>
+                &quot;Should I deleted from darkice (1.2-0.2) unstable; urgency=medium, down below?&quot;<br>
+                and I got this msg<br>
+                root@streamer:~/src/darkice-1.2# dpkg-buildpackage -rfakeroot -uc -b<br>
+                dpkg-buildpackage: warning: using a gain-root-command while being root<br>
+                dpkg-buildpackage: source package darkice<br>
+                dpkg-buildpackage: source version 1.2-999~mp3+1<br>
+                dpkg-buildpackage: source distribution UNRELEASED<br>
+                dpkg-buildpackage: source changed by root &lt;root@streamer&gt;<br>
+                dpkg-buildpackage: host architecture armhf<br>
+                dpkg-source --before-build darkice-1.2<br>
+                dpkg-checkbuilddeps: Unmet build dependencies: libopus-dev<br>
+                dpkg-buildpackage: warning: build dependencies/conflicts unsatisfied; aborting<br>
+                dpkg-buildpackage: warning: (Use -d flag to override.)<br>
+                root@streamer:~/src/darkice-1.2# sudo dpkg -i ../darkice_1.2-999~mp3+1_armhf.deb                                       dpkg: error processing archive ../darkice_1.2-999~mp3+1_armhf.deb (--install):<br>
+                cannot access archive: No such file or directory<br>
+                Errors were encountered while processing:<br>
+                ../darkice_1.2-999~mp3+1_armhf.deb<br>
+
+            </p>
+        </li>
+
+        <li id="comment-2d966a0e-d423-4d51-a2e8-25dea391097e">
+            <span class="comment-author">Steffen</span>
+            <time class="comment-time" datetime="2018-04-09 12:22">on July 24, 2018 at 08:49</time>
+            <p>
+                Hi Roozano, it seems you need to install libopus dependencies:<br>
+                <br>
+                apt-get install libopus-dev
             </p>
         </li>
     </ol>
