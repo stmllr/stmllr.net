@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Legal / Imprint
-date: 2015-02-21 00:21
+date: 2020-01-20 14:20
 permalink: /imprint/index.html
 ---
 
