@@ -13,6 +13,4 @@ Erbprinzenstraße 18<br />
 79098 Freiburg<br />
 Germany
 
-e-mail: typo3(_ath_)t3node.com
-
 Respect privacy. No tracking happens on this website. No personal data is stored. No cookie. No data is transmitted to external services.
