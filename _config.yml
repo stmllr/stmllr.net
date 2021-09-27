@@ -9,7 +9,7 @@ permalink: /blog/:title/index.html
 tag_dir: tags
 paginate: 10
 
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 # Build settings
 markdown: kramdown
